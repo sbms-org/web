@@ -1,0 +1,1101 @@
+{
+  "owners": [
+    {
+      "id": "pending-001",
+      "fullName": "Sarah Johnson",
+      "mobileNumber": "+251911223344",
+      "email": "+251911223344@pixelrents.com",
+      "status": "ACTIVE",
+      "role": "OWNER",
+      "joinedDate": "2026-02-20T10:00:00Z",
+      "lastActive": null,
+      "buildingsCount": 0,
+      "unitsCount": 0
+    },
+    {
+      "id": "pending-002",
+      "fullName": "David Okello",
+      "mobileNumber": "+251922334455",
+      "email": "david.okello@example.com",
+      "status": "ACTIVE",
+      "role": "OWNER",
+      "joinedDate": "2026-02-21T09:30:00Z",
+      "lastActive": null,
+      "buildingsCount": 0,
+      "unitsCount": 0
+    },
+    {
+      "id": "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11",
+      "fullName": "John Smith",
+      "mobileNumber": "+251912312312",
+      "email": "john.smith@example.com",
+      "status": "ACTIVE",
+      "role": "OWNER",
+      "joinedDate": "2023-03-12T00:00:00Z",
+      "lastActive": "2025-07-02T09:23:00Z",
+      "buildingsCount": 5,
+      "unitsCount": 48
+    },
+    {
+      "id": "b1f2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+      "fullName": "Olivia Bennett",
+      "mobileNumber": "+251912312312",
+      "email": "olivia.bennett@example.com",
+      "status": "SUSPENDED",
+      "role": "OWNER",
+      "joinedDate": "2022-06-27T00:00:00Z",
+      "lastActive": "2025-06-02T14:15:00Z",
+      "buildingsCount": 3,
+      "unitsCount": 27
+    },
+    {
+      "id": "c2d3e4f5-6a7b-8c9d-0e1f-2a3b4c5d6e7f",
+      "fullName": "Daniel Warren",
+      "mobileNumber": "+251912312312",
+      "email": "daniel.warren@example.com",
+      "status": "TERMINATED",
+      "role": "OWNER",
+      "joinedDate": "2024-01-08T00:00:00Z",
+      "lastActive": "2025-06-28T11:30:00Z",
+      "buildingsCount": 0,
+      "unitsCount": 0
+    },
+    {
+      "id": "d3e4f5a6-7b8c-9d0e-1f2a-3b4c5d6e7f8a",
+      "fullName": "Chloe Hayes",
+      "mobileNumber": "+251912312312",
+      "email": "chloe.hayes@example.com",
+      "status": "ACTIVE",
+      "role": "OWNER",
+      "joinedDate": "2021-10-05T00:00:00Z",
+      "lastActive": "2025-06-22T16:45:00Z",
+      "buildingsCount": 8,
+      "unitsCount": 94
+    },
+    {
+      "id": "e4f5a6b7-8c9d-0e1f-2a3b-4c5d6e7f8a9b",
+      "fullName": "Marcus Reed",
+      "mobileNumber": "+251912312312",
+      "email": "marcus.reed@example.com",
+      "status": "ACTIVE",
+      "role": "OWNER",
+      "joinedDate": "2023-02-19T00:00:00Z",
+      "lastActive": "2025-04-02T08:20:00Z",
+      "buildingsCount": 4,
+      "unitsCount": 32
+    },
+    {
+      "id": "f5a6b7c8-9d0e-1f2a-3b4c-5d6e7f8a9b0c",
+      "fullName": "Isabelle Clark",
+      "mobileNumber": "+251912312312",
+      "email": "isabelle.clark@example.com",
+      "status": "ACTIVE",
+      "role": "OWNER",
+      "joinedDate": "2022-08-30T00:00:00Z",
+      "lastActive": "2025-06-25T13:10:00Z",
+      "buildingsCount": 6,
+      "unitsCount": 67
+    },
+    {
+      "id": "a6b7c8d9-0e1f-2a3b-4c5d-6e7f8a9b0c1d",
+      "fullName": "Lucas Mitchell",
+      "mobileNumber": "+251912312312",
+      "email": "lucas.mitchell@example.com",
+      "status": "ACTIVE",
+      "role": "OWNER",
+      "joinedDate": "2024-04-23T00:00:00Z",
+      "lastActive": "2025-07-02T06:15:00Z",
+      "buildingsCount": 2,
+      "unitsCount": 15
+    },
+    {
+      "id": "b7c8d9e0-1f2a-3b4c-5d6e-7f8a9b0c1d2e",
+      "fullName": "Mark Wilburg",
+      "mobileNumber": "+251912312312",
+      "email": "mark.wilburg@example.com",
+      "status": "TERMINATED",
+      "role": "OWNER",
+      "joinedDate": "2020-11-14T00:00:00Z",
+      "lastActive": "2025-05-01T09:30:00Z",
+      "buildingsCount": 0,
+      "unitsCount": 0
+    },
+    {
+      "id": "c8d9e0f1-2a3b-4c5d-6e7f-8a9b0c1d2e3f",
+      "fullName": "Nicholas Agenn",
+      "mobileNumber": "+251912312312",
+      "email": "nicholas.agenn@example.com",
+      "status": "ACTIVE",
+      "role": "OWNER",
+      "joinedDate": "2023-07-06T00:00:00Z",
+      "lastActive": "2025-07-02T07:45:00Z",
+      "buildingsCount": 4,
+      "unitsCount": 41
+    },
+    {
+      "id": "d9e0f1a2-3b4c-5d6e-7f8a-9b0c1d2e3f4a",
+      "fullName": "Mia Nadinn",
+      "mobileNumber": "+251912312312",
+      "email": "mia.nadinn@example.com",
+      "status": "SUSPENDED",
+      "role": "OWNER",
+      "joinedDate": "2021-12-31T00:00:00Z",
+      "lastActive": "2025-03-02T10:20:00Z",
+      "buildingsCount": 2,
+      "unitsCount": 18
+    },
+    {
+      "id": "e0f1a2b3-4c5d-6e7f-8a9b-0c1d2e3f4a5b",
+      "fullName": "Noemi Villan",
+      "mobileNumber": "+251912312312",
+      "email": "noemi.villan@example.com",
+      "status": "ACTIVE",
+      "role": "OWNER",
+      "joinedDate": "2024-08-10T00:00:00Z",
+      "lastActive": "2025-07-02T10:15:00Z",
+      "buildingsCount": 1,
+      "unitsCount": 8
+    },
+    {
+      "id": "owner-1771835655628",
+      "fullName": "solomon",
+      "email": "solimontemesgen.@gmail.com",
+      "mobileNumber": "+251928261700",
+      "status": "ACTIVE",
+      "role": "OWNER",
+      "joinedDate": "2026-02-23T08:34:15.628Z",
+      "lastActive": null,
+      "buildingsCount": 0,
+      "unitsCount": 0
+    },
+    {
+      "id": "owner-1771943796828",
+      "fullName": "mahlet",
+      "email": "solimontemesgen@gmail.com",
+      "mobileNumber": "+251928261700",
+      "status": "PENDING",
+      "role": "OWNER",
+      "joinedDate": "2026-02-24T14:36:36.828Z",
+      "lastActive": null,
+      "buildingsCount": 0,
+      "unitsCount": 0
+    },
+    {
+      "id": "owner-1771994238581",
+      "fullName": "sol",
+      "email": "+251929303290@pixelrents.com",
+      "mobileNumber": "+251929303290",
+      "status": "TERMINATED",
+      "role": "OWNER",
+      "joinedDate": "2026-02-25T04:37:18.581Z",
+      "lastActive": null,
+      "buildingsCount": 0,
+      "unitsCount": 0
+    }
+  ],
+  "buildings": [
+    {
+      "id": "bld-001",
+      "name": "Metropolitan Bole Tower",
+      "ownerId": "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11",
+      "address": "Bole, Addis Ababa",
+      "units": 48,
+      "occupiedUnits": 42,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "bld-002",
+      "name": "Sunrise Residential Complex",
+      "ownerId": "d3e4f5a6-7b8c-9d0e-1f2a-3b4c5d6e7f8a",
+      "address": "CMC, Addis Ababa",
+      "units": 94,
+      "occupiedUnits": 87,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "bld-003",
+      "name": "Green Valley Apartments",
+      "ownerId": "f5a6b7c8-9d0e-1f2a-3b4c-5d6e7f8a9b0c",
+      "address": "Kazanchis, Addis Ababa",
+      "units": 67,
+      "occupiedUnits": 60,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "bld-004",
+      "name": "Central Park Residences",
+      "ownerId": "e4f5a6b7-8c9d-0e1f-2a3b-4c5d6e7f8a9b",
+      "address": "Piazza, Addis Ababa",
+      "units": 32,
+      "occupiedUnits": 29,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "bld-005",
+      "name": "Hillside Towers",
+      "ownerId": "b1f2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+      "address": "Gerji, Addis Ababa",
+      "units": 27,
+      "occupiedUnits": 20,
+      "status": "SUSPENDED"
+    }
+  ],
+  "settings": {
+    "paymentCycle": {
+      "cycleType": "monthly",
+      "dueDay": 5,
+      "gracePeriodDays": 3,
+      "lateFeePercentage": 2.5,
+      "currency": "ETB",
+      "paymentMethods": [
+        "CBECBE",
+        "ABYS Bank",
+        "Chapa",
+        "AWSH Bank"
+      ]
+    },
+    "notifications": {
+      "rentDueReminderDays": 3,
+      "emailEnabled": true,
+      "smsEnabled": true,
+      "inAppEnabled": true
+    },
+    "system": {
+      "maintenanceMode": false,
+      "maxLoginAttempts": 5,
+      "sessionTimeoutMinutes": 60,
+      "twoFactorAuth": false,
+      "appVersion": "2.1.5",
+      "apiRateLimit": 1000
+    }
+  },
+  "auditLogs": [
+    {
+      "id": "log-001",
+      "user": "admin@pixelrents.com",
+      "phoneNumber": "+251911000001",
+      "userRole": "ADMIN",
+      "action": "LOGIN",
+      "description": "Admin logged in",
+      "ip": "192.168.1.1",
+      "timestamp": "2026-02-21T08:30:00Z",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "log-002",
+      "user": "john.smith@example.com",
+      "phoneNumber": "+251912223344",
+      "userRole": "OWNER",
+      "action": "OWNER_CREATE",
+      "description": "New owner registered",
+      "ip": "10.0.0.15",
+      "timestamp": "2026-02-21T07:45:00Z",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "log-003",
+      "user": "admin@pixelrents.com",
+      "phoneNumber": "+251911000001",
+      "userRole": "ADMIN",
+      "action": "OWNER_SUSPEND",
+      "description": "Owner Olivia Bennett suspended",
+      "ip": "192.168.1.1",
+      "timestamp": "2026-02-20T15:20:00Z",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "log-004",
+      "user": "system",
+      "phoneNumber": "+251900000000",
+      "userRole": "ADMIN",
+      "action": "PAYMENT_PROCESSED",
+      "description": "Rent payment processed for Metropolitan Bole Tower",
+      "ip": "10.0.0.1",
+      "timestamp": "2026-02-20T14:00:00Z",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "log-005",
+      "user": "admin@pixelrents.com",
+      "phoneNumber": "+251911000001",
+      "userRole": "ADMIN",
+      "action": "SETTINGS_UPDATE",
+      "description": "Payment cycle updated",
+      "ip": "192.168.1.1",
+      "timestamp": "2026-02-20T11:30:00Z",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "log-006",
+      "user": "mia.nadinn@example.com",
+      "phoneNumber": "+251913445566",
+      "userRole": "TENANT",
+      "action": "LOGIN_FAILED",
+      "description": "Failed login attempt",
+      "ip": "197.156.65.22",
+      "timestamp": "2026-02-20T10:15:00Z",
+      "status": "FAILED"
+    },
+    {
+      "id": "log-007",
+      "user": "system",
+      "phoneNumber": "+251900000000",
+      "userRole": "ADMIN",
+      "action": "NOTIFICATION_SENT",
+      "description": "Rent due notification sent to 567 tenants",
+      "ip": "10.0.0.1",
+      "timestamp": "2026-02-19T09:00:00Z",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "log-008",
+      "user": "admin@pixelrents.com",
+      "phoneNumber": "+251911000001",
+      "userRole": "ADMIN",
+      "action": "OWNER_DELETE",
+      "description": "Owner Mark Wilburg deleted",
+      "ip": "192.168.1.1",
+      "timestamp": "2026-02-19T16:00:00Z",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "log-009",
+      "user": "chloe.hayes@example.com",
+      "phoneNumber": "+251914556677",
+      "userRole": "OWNER",
+      "action": "BUILDING_ADD",
+      "description": "New building Sunrise Complex added",
+      "ip": "10.0.0.25",
+      "timestamp": "2026-02-18T13:45:00Z",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "log-010",
+      "user": "system",
+      "phoneNumber": "+251900000000",
+      "userRole": "ADMIN",
+      "action": "PAYMENT_FAILED",
+      "description": "Payment failed: insufficient funds for tenant +251913267890",
+      "ip": "10.0.0.1",
+      "timestamp": "2026-02-18T14:22:00Z",
+      "status": "FAILED"
+    },
+    {
+      "id": "log-011",
+      "user": "admin@pixelrents.com",
+      "phoneNumber": "+251911000001",
+      "userRole": "ADMIN",
+      "action": "TEMPLATE_UPDATE",
+      "description": "Notification template DUE_RENT updated",
+      "ip": "192.168.1.1",
+      "timestamp": "2026-02-17T10:00:00Z",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "log-012",
+      "user": "marcus.reed@example.com",
+      "phoneNumber": "+251915667788",
+      "userRole": "OWNER",
+      "action": "LOGIN",
+      "description": "Owner logged in",
+      "ip": "41.33.105.12",
+      "timestamp": "2026-02-17T08:30:00Z",
+      "status": "SUCCESS"
+    }
+  ],
+  "reports": [
+    {
+      "id": "rpt-001",
+      "type": "RENT_COLLECTION",
+      "title": "Rent Collection Summary - February 2026",
+      "period": "2026-02",
+      "totalExpected": 5800000,
+      "totalCollected": 4850000,
+      "collectionRate": 83.6,
+      "overdueAmount": 950000,
+      "totalTenants": 1234,
+      "payingTenants": 1089,
+      "generatedAt": "2026-02-21T00:00:00Z"
+    },
+    {
+      "id": "rpt-002",
+      "type": "OVERDUE_PAYMENTS",
+      "title": "Overdue Payments Report - February 2026",
+      "period": "2026-02",
+      "totalOverdue": 950000,
+      "overdueCount": 145,
+      "avgOverdueDays": 12,
+      "highRiskTenants": 32,
+      "generatedAt": "2026-02-21T00:00:00Z"
+    },
+    {
+      "id": "rpt-003",
+      "type": "OWNER_ACTIVITY",
+      "title": "Owner Activity Report - February 2026",
+      "period": "2026-02",
+      "activeOwners": 7,
+      "suspendedOwners": 2,
+      "terminatedOwners": 2,
+      "newOwnersThisMonth": 3,
+      "generatedAt": "2026-02-21T00:00:00Z"
+    },
+    {
+      "id": "rpt-004",
+      "type": "OCCUPANCY_RATE",
+      "title": "Occupancy Rate Report - February 2026",
+      "period": "2026-02",
+      "totalUnits": 368,
+      "occupiedUnits": 307,
+      "occupancyRate": 83.4,
+      "vacantUnits": 61,
+      "shopsOccupied": 45,
+      "shopsTotal": 55,
+      "officesOccupied": 120,
+      "officesTotal": 145,
+      "housesOccupied": 142,
+      "housesTotal": 168,
+      "generatedAt": "2026-02-21T00:00:00Z"
+    },
+    {
+      "id": "rpt-005",
+      "type": "INCOME_BY_BUILDING",
+      "title": "Income Report by Building - February 2026",
+      "period": "2026-02",
+      "buildings": [
+        {
+          "id": "bld-001",
+          "name": "Metropolitan Bole Tower",
+          "income": 1850000,
+          "units": 48,
+          "collectionRate": 92
+        },
+        {
+          "id": "bld-002",
+          "name": "Sunrise Residential Complex",
+          "income": 2200000,
+          "units": 94,
+          "collectionRate": 88
+        },
+        {
+          "id": "bld-003",
+          "name": "Green Valley Apartments",
+          "income": 1200000,
+          "units": 67,
+          "collectionRate": 85
+        },
+        {
+          "id": "bld-004",
+          "name": "Central Park Residences",
+          "income": 450000,
+          "units": 32,
+          "collectionRate": 78
+        },
+        {
+          "id": "bld-005",
+          "name": "Hillside Towers",
+          "income": 150000,
+          "units": 27,
+          "collectionRate": 65
+        }
+      ],
+      "totalIncome": 5850000,
+      "generatedAt": "2026-02-21T00:00:00Z"
+    }
+  ],
+  "notificationTemplates": [
+    {
+      "id": "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11",
+      "type": "APP_UPDATE",
+      "status": "NEW_UPDATE",
+      "formatWithPlaceholder": "There is a new update, update the app to {LATEST_VERSION}",
+      "repeatNotifying": "DISABLED",
+      "variables": [
+        "LATEST_VERSION"
+      ],
+      "channels": [
+        "email",
+        "sms",
+        "in_app"
+      ],
+      "createdAt": "2025-01-15T10:00:00Z",
+      "updatedAt": "2025-06-20T14:30:00Z"
+    },
+    {
+      "id": "b1f2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+      "type": "TRANSACTION",
+      "status": "COMPLETED",
+      "formatWithPlaceholder": "A new transaction for {Placeholder} was completed",
+      "repeatNotifying": "DISABLED",
+      "variables": [
+        "Placeholder"
+      ],
+      "channels": [
+        "email",
+        "in_app"
+      ],
+      "createdAt": "2025-02-10T11:20:00Z",
+      "updatedAt": "2025-06-18T09:15:00Z"
+    },
+    {
+      "id": "c2d3e4f5-6a7b-8c9d-0e1f-2a3b4c5d6e7f",
+      "type": "LOGGED_IN",
+      "status": "SUCCESSFUL",
+      "formatWithPlaceholder": "Password Attempt, 3 attempts remaining",
+      "repeatNotifying": "DISABLED",
+      "variables": [],
+      "channels": [
+        "email",
+        "sms"
+      ],
+      "createdAt": "2025-03-05T08:45:00Z",
+      "updatedAt": "2025-06-15T16:20:00Z"
+    },
+    {
+      "id": "d3e4f5a6-7b8c-9d0e-1f2a-3b4c5d6e7f8a",
+      "type": "DUE_RENT",
+      "status": "PAID",
+      "formatWithPlaceholder": "Due rent is paid for {DURATION} Month Total {RENTAL_PROPERTY} Rent On {TODAY_DATE}",
+      "repeatNotifying": "DISABLED",
+      "variables": [
+        "DURATION",
+        "RENTAL_PROPERTY",
+        "TODAY_DATE"
+      ],
+      "channels": [
+        "email",
+        "sms",
+        "in_app"
+      ],
+      "createdAt": "2025-04-12T09:30:00Z",
+      "updatedAt": "2025-06-22T11:10:00Z"
+    },
+    {
+      "id": "e4f5a6b7-8c9d-0e1f-2a3b-4c5d6e7f8a9b",
+      "type": "RECEIPT",
+      "status": "WAITING",
+      "formatWithPlaceholder": "Uploaded Rent Receipt Month {DURATION} for {RENTAL_PROPERTY} Rent Pending Approval",
+      "repeatNotifying": "DISABLED",
+      "variables": [
+        "DURATION",
+        "RENTAL_PROPERTY"
+      ],
+      "channels": [
+        "email",
+        "in_app"
+      ],
+      "createdAt": "2025-05-20T13:15:00Z",
+      "updatedAt": "2025-06-25T10:40:00Z"
+    },
+    {
+      "id": "f5a6b7c8-9d0e-1f2a-3b4c-5d6e7f8a9b0c",
+      "type": "PAID",
+      "status": "PAID_EARLY",
+      "formatWithPlaceholder": "EARLY! Paid Total Months {DURATION} for {RENTAL_PROPERTY} Rent",
+      "repeatNotifying": "DISABLED",
+      "variables": [
+        "DURATION",
+        "RENTAL_PROPERTY"
+      ],
+      "channels": [
+        "email",
+        "sms"
+      ],
+      "createdAt": "2025-06-01T07:50:00Z",
+      "updatedAt": "2025-06-28T12:30:00Z"
+    },
+    {
+      "id": "a6b7c8d9-0e1f-2a3b-4c5d-6e7f8a9b0c1d",
+      "type": "PAID",
+      "status": "PAID_LATE",
+      "formatWithPlaceholder": "RECEIVED! Paid Total Months {DURATION} for {RENTAL_PROPERTY} Rent",
+      "repeatNotifying": "DISABLED",
+      "variables": [
+        "DURATION",
+        "RENTAL_PROPERTY"
+      ],
+      "channels": [
+        "email",
+        "sms",
+        "in_app"
+      ],
+      "createdAt": "2025-06-03T15:20:00Z",
+      "updatedAt": "2025-06-29T09:00:00Z"
+    },
+    {
+      "id": "b7c8d9e0-1f2a-3b4c-5d6e-7f8a9b0c1d2e",
+      "type": "REVOKE_TENANT",
+      "status": "REVOKE_MOBILE",
+      "formatWithPlaceholder": "Tenant (MOBILE_NUMBER) Account Revoked For {RENTAL_PROPERTY} Property",
+      "repeatNotifying": "DISABLED",
+      "variables": [
+        "MOBILE_NUMBER",
+        "RENTAL_PROPERTY"
+      ],
+      "channels": [
+        "email",
+        "sms"
+      ],
+      "createdAt": "2025-06-10T10:10:00Z",
+      "updatedAt": "2025-06-30T14:45:00Z"
+    },
+    {
+      "id": "c8d9e0f1-2a3b-4c5d-6e7f-8a9b0c1d2e3f",
+      "type": "DUE_RENT",
+      "status": "ALERT",
+      "formatWithPlaceholder": "Rent is Due Month {DURATION} for {RENTAL_PROPERTY} Rent Pending Approval",
+      "repeatNotifying": "DISABLED",
+      "variables": [
+        "DURATION",
+        "RENTAL_PROPERTY"
+      ],
+      "channels": [
+        "email",
+        "sms",
+        "in_app"
+      ],
+      "createdAt": "2025-06-15T12:00:00Z",
+      "updatedAt": "2025-07-01T08:30:00Z"
+    },
+    {
+      "id": "d9e0f1a2-3b4c-5d6e-7f8a-9b0c1d2e3f4a",
+      "type": "PASSWORD",
+      "status": "AVAILABLE_ATTEMPT",
+      "formatWithPlaceholder": "Failed password attempt {ATTEMPT_INDEX}, remaining {TOTAL_ATTEMPT_BEFORE_CLOSE}",
+      "repeatNotifying": "ENABLED",
+      "variables": [
+        "ATTEMPT_INDEX",
+        "TOTAL_ATTEMPT_BEFORE_CLOSE"
+      ],
+      "channels": [
+        "email",
+        "sms"
+      ],
+      "createdAt": "2025-06-20T09:45:00Z",
+      "updatedAt": "2025-07-02T10:15:00Z"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11",
+      "device": "Android",
+      "mobileNumber": "+251913266434",
+      "record": "PAYMENT_SUCCESS: Received Months 02-05 for Metropolitan Bole Tower 431 Rent from +251913232423",
+      "timestamp": "2026-02-05T09:40:59Z",
+      "amount": 4500,
+      "currency": "ETB",
+      "status": "success"
+    },
+    {
+      "id": "b1f2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+      "device": "Android",
+      "mobileNumber": "+251913231234",
+      "record": "PAYMENT_SUCCESS: Received Months 02-05 for Metropolitan Bole Tower 431 Rent from +251913232424",
+      "timestamp": "2026-02-05T09:43:04Z",
+      "amount": 4500,
+      "currency": "ETB",
+      "status": "success"
+    },
+    {
+      "id": "c2d3e4f5-6a7b-8c9d-0e1f-2a3b4c5d6e7f",
+      "device": "Android",
+      "mobileNumber": "+251913231244",
+      "record": "PAYMENT_SUCCESS: Paid Months 02-05 for Metropolitan Bole Tower 110 Rent",
+      "timestamp": "2026-02-05T10:39:57Z",
+      "amount": 3200,
+      "currency": "ETB",
+      "status": "success"
+    },
+    {
+      "id": "d3e4f5a6-7b8c-9d0e-1f2a-3b4c5d6e7f8a",
+      "device": "iOS",
+      "mobileNumber": "+251913234222",
+      "record": "PAYMENT_SUCCESS: Paid Months 02-05 for Metropolitan Bole Tower 437 Rent",
+      "timestamp": "2026-02-05T10:35:34Z",
+      "amount": 3800,
+      "currency": "ETB",
+      "status": "success"
+    },
+    {
+      "id": "d1e2f3a4-5b6c-7d8e-9f0a-1b2c3d4e5f6a",
+      "device": "Android",
+      "mobileNumber": "+251913267890",
+      "record": "PAYMENT_FAILED: Insufficient funds for Metropolitan Bole Tower 210 Rent",
+      "timestamp": "2026-02-05T14:22:10Z",
+      "amount": 4200,
+      "currency": "ETB",
+      "status": "failed"
+    }
+  ],
+  "paymentMethods": [
+    {
+      "id": "pm-001",
+      "bankCode": "ABYS",
+      "bankName": "Bank of Abyssinia",
+      "accountNumberFormat": "1XXXXXXXXXXXX",
+      "status": "ENABLED",
+      "createdAt": "2025-01-10T00:00:00Z",
+      "updatedAt": "2025-01-10T00:00:00Z"
+    },
+    {
+      "id": "pm-002",
+      "bankCode": "CBE",
+      "bankName": "Commercial Bank of Ethiopia",
+      "accountNumberFormat": "1000XXXXXXXXXXXX",
+      "status": "ENABLED",
+      "createdAt": "2025-01-10T00:00:00Z",
+      "updatedAt": "2025-01-10T00:00:00Z"
+    },
+    {
+      "id": "pm-003",
+      "bankCode": "ABAY",
+      "bankName": "Abay Bank",
+      "accountNumberFormat": "2XXXXXXXXXXXXXXX",
+      "status": "ENABLED",
+      "createdAt": "2025-01-10T00:00:00Z",
+      "updatedAt": "2025-01-10T00:00:00Z"
+    },
+    {
+      "id": "pm-004",
+      "bankCode": "ZEMEN",
+      "bankName": "Zemen Bank",
+      "accountNumberFormat": "141XXXXXXXXXXXXXX",
+      "status": "ENABLED",
+      "createdAt": "2025-01-10T00:00:00Z",
+      "updatedAt": "2025-01-10T00:00:00Z"
+    },
+    {
+      "id": "pm-005",
+      "bankCode": "DASH",
+      "bankName": "Dashen Bank",
+      "accountNumberFormat": "158XXXXXXXXXXXXXX",
+      "status": "ENABLED",
+      "createdAt": "2025-01-10T00:00:00Z",
+      "updatedAt": "2025-01-10T00:00:00Z"
+    },
+    {
+      "id": "pm-006",
+      "bankCode": "HIBR",
+      "bankName": "Hibret Bank",
+      "accountNumberFormat": "2XXXXXXXXXXXXXXX",
+      "status": "ENABLED",
+      "createdAt": "2025-01-10T00:00:00Z",
+      "updatedAt": "2025-01-10T00:00:00Z"
+    },
+    {
+      "id": "pm-007",
+      "bankCode": "DBE",
+      "bankName": "Development Bank of Ethiopia",
+      "accountNumberFormat": "247XXXXXXXXXXXXXX",
+      "status": "ENABLED",
+      "createdAt": "2025-01-10T00:00:00Z",
+      "updatedAt": "2025-01-10T00:00:00Z"
+    },
+    {
+      "id": "pm-008",
+      "bankCode": "AWSH",
+      "bankName": "Awash Bank",
+      "accountNumberFormat": "2XXXXXXXXXXXXXXX",
+      "status": "DISABLED",
+      "createdAt": "2025-01-10T00:00:00Z",
+      "updatedAt": "2025-01-10T00:00:00Z"
+    },
+    {
+      "id": "pm-009",
+      "bankCode": "WOG",
+      "bankName": "Wegagen Bank",
+      "accountNumberFormat": "88XXXXXXXXXXXXXX",
+      "status": "ENABLED",
+      "createdAt": "2025-01-10T00:00:00Z",
+      "updatedAt": "2025-01-10T00:00:00Z"
+    },
+    {
+      "id": "pm-010",
+      "bankCode": "NIB",
+      "bankName": "Nib International Bank",
+      "accountNumberFormat": "92XXXXXXXXXXXXXX",
+      "status": "ENABLED",
+      "createdAt": "2025-01-10T00:00:00Z",
+      "updatedAt": "2025-01-10T00:00:00Z"
+    },
+    {
+      "id": "pm-011",
+      "bankCode": "COOP",
+      "bankName": "Cooperative Bank of Ethiopia",
+      "accountNumberFormat": "25XXXXXXXXXXXXXX",
+      "status": "ENABLED",
+      "createdAt": "2025-01-10T00:00:00Z",
+      "updatedAt": "2025-01-10T00:00:00Z"
+    }
+  ],
+  "tenants": [
+    {
+      "id": "tenant-001",
+      "fullName": "John Smith",
+      "ownerMobile": "+251912312312",
+      "tenantMobile": "+251912312312",
+      "propertyCode": "MBT127",
+      "status": "ACTIVE_RENT",
+      "occupiedDate": "2023-03-12T00:00:00Z",
+      "lastActive": "2026-02-21T08:00:00Z",
+      "createdAt": "2023-03-12T00:00:00Z"
+    },
+    {
+      "id": "tenant-002",
+      "fullName": "Olivia Bennett",
+      "ownerMobile": "+251912312312",
+      "tenantMobile": "+251912312312",
+      "propertyCode": "MBT128",
+      "status": "ACTIVE_RENT",
+      "occupiedDate": "2022-06-27T00:00:00Z",
+      "lastActive": "2026-02-20T15:00:00Z",
+      "createdAt": "2022-06-27T00:00:00Z"
+    },
+    {
+      "id": "tenant-003",
+      "fullName": "Daniel Warren",
+      "ownerMobile": "+251912312312",
+      "tenantMobile": "+251912312312",
+      "propertyCode": "MBT273",
+      "status": "REVOKED",
+      "occupiedDate": "2024-01-08T00:00:00Z",
+      "lastActive": "2026-02-17T10:00:00Z",
+      "createdAt": "2024-01-08T00:00:00Z"
+    },
+    {
+      "id": "tenant-004",
+      "fullName": "Chloe Hayes",
+      "ownerMobile": "+251912312312",
+      "tenantMobile": "+251912312312",
+      "propertyCode": "MBT339",
+      "status": "ACTIVE_RENT",
+      "occupiedDate": "2021-10-05T00:00:00Z",
+      "lastActive": "2026-02-21T07:30:00Z",
+      "createdAt": "2021-10-05T00:00:00Z"
+    },
+    {
+      "id": "tenant-005",
+      "fullName": "Marcus Reed",
+      "ownerMobile": "+251912312312",
+      "tenantMobile": "+251912312312",
+      "propertyCode": "MBT485",
+      "status": "ACTIVE_RENT",
+      "occupiedDate": "2023-02-19T00:00:00Z",
+      "lastActive": "2026-02-20T18:00:00Z",
+      "createdAt": "2023-02-19T00:00:00Z"
+    },
+    {
+      "id": "tenant-006",
+      "fullName": "Isabelle Clark",
+      "ownerMobile": "+251912312312",
+      "tenantMobile": "+251912312312",
+      "propertyCode": "MBT01",
+      "status": "ACTIVE_RENT",
+      "occupiedDate": "2022-08-30T00:00:00Z",
+      "lastActive": "2026-02-21T07:00:00Z",
+      "createdAt": "2022-08-30T00:00:00Z"
+    },
+    {
+      "id": "tenant-007",
+      "fullName": "Lucas Mitchell",
+      "ownerMobile": "+251912312312",
+      "tenantMobile": "+251912312312",
+      "propertyCode": "ESH213",
+      "status": "ACTIVE_RENT",
+      "occupiedDate": "2024-04-23T00:00:00Z",
+      "lastActive": "2026-02-21T04:00:00Z",
+      "createdAt": "2024-04-23T00:00:00Z"
+    },
+    {
+      "id": "tenant-008",
+      "fullName": "Mark Wilburg",
+      "ownerMobile": "+251912312312",
+      "tenantMobile": "+251912312312",
+      "propertyCode": "ESH542",
+      "status": "REVOKED",
+      "occupiedDate": "2020-11-14T00:00:00Z",
+      "lastActive": "2026-02-19T12:00:00Z",
+      "createdAt": "2020-11-14T00:00:00Z"
+    },
+    {
+      "id": "tenant-009",
+      "fullName": "Nicholas Agenn",
+      "ownerMobile": "+251912312312",
+      "tenantMobile": "+251912312312",
+      "propertyCode": "ESH421",
+      "status": "ACTIVE_RENT",
+      "occupiedDate": "2023-07-06T00:00:00Z",
+      "lastActive": "2026-02-21T05:00:00Z",
+      "createdAt": "2023-07-06T00:00:00Z"
+    },
+    {
+      "id": "tenant-010",
+      "fullName": "Mia Nadinn",
+      "ownerMobile": "+251912312312",
+      "tenantMobile": "+251912312312",
+      "propertyCode": "ESH948",
+      "status": "REVOKED",
+      "occupiedDate": "2021-12-31T00:00:00Z",
+      "lastActive": "2026-02-17T14:00:00Z",
+      "createdAt": "2021-12-31T00:00:00Z"
+    },
+    {
+      "id": "tenant-011",
+      "fullName": "Noemi Villan",
+      "ownerMobile": "+251912312312",
+      "tenantMobile": "+251912312312",
+      "propertyCode": "ESH222",
+      "status": "ACTIVE_RENT",
+      "occupiedDate": "2024-08-10T00:00:00Z",
+      "lastActive": "2026-02-21T08:45:00Z",
+      "createdAt": "2024-08-10T00:00:00Z"
+    }
+  ],
+  "buildings": [
+    {
+      "id": "bld-001",
+      "name": "Sunrise Apartments",
+      "property_type": "Residential",
+      "additional_notes": "Modern apartment complex with parking facilities and 24/7 security",
+      "address": "123 Bole Road",
+      "city": "Addis Ababa",
+      "state_or_province": "Addis Ababa",
+      "country": "ETHIOPIA",
+      "total_floors": 8,
+      "total_units": 32,
+      "unit_per_floor_distribution": "4 units per floor",
+      "payment_cycle": "Monthly",
+      "default_rent_amount": 15000.00,
+      "status": "PENDING_REVIEW",
+      "property_deed_url": "https://example.com/docs/deed-001.pdf",
+      "certificate_of_title_url": "https://example.com/docs/title-001.pdf",
+      "business_tin_number_url": "https://example.com/docs/tin-001.pdf",
+      "rejection_reason": null,
+      "owner_id": "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11",
+      "owner_name": "John Smith",
+      "created_at": "2026-02-15T10:30:00Z",
+      "updated_at": "2026-02-15T10:30:00Z",
+      "is_active": true,
+      "images": [
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=400",
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=400",
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=400"
+      ]
+    },
+    {
+      "id": "bld-002",
+      "name": "Green Valley Commercial Center",
+      "property_type": "Commercial",
+      "additional_notes": "Prime location for retail and office spaces",
+      "address": "456 Meskel Square",
+      "city": "Addis Ababa",
+      "state_or_province": "Addis Ababa",
+      "country": "ETHIOPIA",
+      "total_floors": 5,
+      "total_units": 20,
+      "unit_per_floor_distribution": "4 units per floor",
+      "payment_cycle": "Monthly",
+      "default_rent_amount": 25000.00,
+      "status": "PENDING_REVIEW",
+      "property_deed_url": "https://example.com/docs/deed-002.pdf",
+      "certificate_of_title_url": "https://example.com/docs/title-002.pdf",
+      "business_tin_number_url": "https://example.com/docs/tin-002.pdf",
+      "rejection_reason": null,
+      "owner_id": "b1f2c3d4-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+      "owner_name": "Olivia Bennett",
+      "created_at": "2026-02-18T14:20:00Z",
+      "updated_at": "2026-02-18T14:20:00Z",
+      "is_active": true,
+      "images": [
+        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400",
+        "https://images.unsplash.com/photo-1497366216548-37526070297c?w=400"
+      ]
+    },
+    {
+      "id": "bld-003",
+      "name": "Hilltop Residences",
+      "property_type": "Residential",
+      "additional_notes": "Luxury residential building with gym and swimming pool",
+      "address": "789 Kazanchis Street",
+      "city": "Addis Ababa",
+      "state_or_province": "Addis Ababa",
+      "country": "ETHIOPIA",
+      "total_floors": 12,
+      "total_units": 48,
+      "unit_per_floor_distribution": "4 units per floor",
+      "payment_cycle": "Monthly",
+      "default_rent_amount": 20000.00,
+      "status": "PENDING_REVIEW",
+      "property_deed_url": "https://example.com/docs/deed-003.pdf",
+      "certificate_of_title_url": "https://example.com/docs/title-003.pdf",
+      "business_tin_number_url": "https://example.com/docs/tin-003.pdf",
+      "rejection_reason": null,
+      "owner_id": "pending-001",
+      "owner_name": "Sarah Johnson",
+      "created_at": "2026-02-20T09:15:00Z",
+      "updated_at": "2026-02-20T09:15:00Z",
+      "is_active": true,
+      "images": [
+        "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=400",
+        "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=400",
+        "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=400"
+      ]
+    },
+    {
+      "id": "bld-004",
+      "name": "Downtown Business Hub",
+      "property_type": "Mixed Use",
+      "additional_notes": "Mixed-use building with retail on ground floor and offices above",
+      "address": "321 Piazza District",
+      "city": "Addis Ababa",
+      "state_or_province": "Addis Ababa",
+      "country": "ETHIOPIA",
+      "total_floors": 6,
+      "total_units": 24,
+      "unit_per_floor_distribution": "4 units per floor",
+      "payment_cycle": "Monthly",
+      "default_rent_amount": 18000.00,
+      "status": "PENDING_REVIEW",
+      "property_deed_url": "https://example.com/docs/deed-004.pdf",
+      "certificate_of_title_url": "https://example.com/docs/title-004.pdf",
+      "business_tin_number_url": "https://example.com/docs/tin-004.pdf",
+      "rejection_reason": null,
+      "owner_id": "pending-002",
+      "owner_name": "David Okello",
+      "created_at": "2026-02-22T11:45:00Z",
+      "updated_at": "2026-02-22T11:45:00Z",
+      "is_active": true,
+      "images": [
+        "https://images.unsplash.com/photo-1577495508048-b635879837f1?w=400"
+      ]
+    },
+    {
+      "id": "bld-005",
+      "name": "Riverside Towers",
+      "property_type": "Residential",
+      "additional_notes": "High-rise residential building with scenic views",
+      "address": "555 Arat Kilo",
+      "city": "Addis Ababa",
+      "state_or_province": "Addis Ababa",
+      "country": "ETHIOPIA",
+      "total_floors": 15,
+      "total_units": 60,
+      "unit_per_floor_distribution": "4 units per floor",
+      "payment_cycle": "Monthly",
+      "default_rent_amount": 22000.00,
+      "status": "PENDING_REVIEW",
+      "property_deed_url": "https://example.com/docs/deed-005.pdf",
+      "certificate_of_title_url": "https://example.com/docs/title-005.pdf",
+      "business_tin_number_url": "https://example.com/docs/tin-005.pdf",
+      "rejection_reason": null,
+      "owner_id": "a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11",
+      "owner_name": "John Smith",
+      "created_at": "2026-02-25T16:00:00Z",
+      "updated_at": "2026-02-25T16:00:00Z",
+      "is_active": true,
+      "images": [
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=400",
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=400"
+      ]
+    }
+  ]
+}
