@@ -30,5 +30,11 @@ export async function updateBookingStatus(id, status) {
 }
 
 export async function createIssue(issue) {
-  return api.post('/issues', issue);
+  const { category, ...details } = issue;
+  const title = category?.replaceAll('_', ' ') || 'Service issue';
+  return api.post('/issues', {
+    ...details,
+    type: details.bookingId ? 'BOOKING' : category === 'safety' ? 'SAFETY' : 'PLATFORM',
+    subject: details.subject || title,
+  });
 }

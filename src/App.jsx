@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Link, Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 import { AuthProvider } from './context/AuthContext';
@@ -10,6 +10,13 @@ import './index.css';
 function Shell() {
   const { user, logout } = useAuth();
   const location = useLocation();
+  const [demoMode, setDemoMode] = useState(() => localStorage.getItem('sbmsDataSource') === 'demo');
+
+  useEffect(() => {
+    const handleDataSource = (event) => setDemoMode(Boolean(event.detail));
+    window.addEventListener('sbms-data-source', handleDataSource);
+    return () => window.removeEventListener('sbms-data-source', handleDataSource);
+  }, []);
 
   return (
     <div className="app-shell">
@@ -34,6 +41,9 @@ function Shell() {
           )}
         </div>
       </header>
+      {demoMode && <div className="demo-data-notice" role="status">
+        Demo data is active. Changes are simulated in memory and are not saved to the live database.
+      </div>}
       <main className="page-container">
         <Routes>
           <Route path="/" element={<Marketplace view="discover" />} />

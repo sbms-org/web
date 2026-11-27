@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || "http://localhost:4242/api/v1",
+  baseURL: import.meta.env.VITE_API_BASE_URL || "http://localhost:3000/api/v1",
   headers: { "Content-Type": "application/json" },
 });
 
@@ -12,7 +12,12 @@ api.interceptors.request.use((config) => {
 });
 
 api.interceptors.response.use(
-  (response) => response,
+  (response) => {
+    const demoMode = response.headers["x-sbms-data-source"] === "demo";
+    localStorage.setItem("sbmsDataSource", demoMode ? "demo" : "database");
+    window.dispatchEvent(new CustomEvent("sbms-data-source", { detail: demoMode }));
+    return response;
+  },
   (error) => {
     if (error.response?.status === 401) {
       localStorage.removeItem("token");

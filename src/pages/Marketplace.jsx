@@ -33,7 +33,7 @@ function getId(value) {
 }
 
 function getProviderName(provider) {
-  return provider?.name || provider?.fullname || provider?.user?.name || provider?.user?.fullname || 'Service provider';
+  return provider?.name || provider?.displayName || provider?.fullname || provider?.user?.name || provider?.user?.fullname || 'Service provider';
 }
 
 function getProviderServices(provider) {
@@ -61,9 +61,11 @@ function EmptyState({ title, children }) {
 function ProviderCard({ provider, onBook }) {
   const services = getProviderServices(provider);
   const rating = Number(provider?.rating ?? provider?.averageRating);
-  const verified = Number(provider?.verificationLevel ?? provider?.verification_level ?? 0) > 0;
+  const verified = provider?.verificationStatus === 'VERIFIED'
+    || Number(provider?.verificationLevel ?? provider?.verification_level ?? 0) > 0;
   const skills = Array.isArray(provider?.skills) ? provider.skills : [];
-  const price = services[0]?.basePrice ?? services[0]?.base_price;
+  const price = services[0]?.basePrice ?? services[0]?.base_price
+    ?? (services[0]?.priceMinor != null ? Number(services[0].priceMinor) / 100 : undefined);
 
   return (
     <article className="provider-card">
@@ -112,7 +114,8 @@ function BookingDialog({ provider, onClose, onCreated }) {
   const [saving, setSaving] = useState(false);
 
   const selectedService = services.find((service) => getId(service) === serviceId);
-  const availableModes = selectedService?.modesAllowed
+  const availableModes = selectedService?.meetingModes
+    || selectedService?.modesAllowed
     || selectedService?.modes_allowed
     || provider?.meetingModes
     || provider?.modes_supported
@@ -153,6 +156,7 @@ function BookingDialog({ provider, onClose, onCreated }) {
         serviceId,
         mode,
         startsAt: new Date(startsAt).toISOString(),
+        endsAt: new Date(new Date(startsAt).getTime() + Number(selectedService?.durationMinutes || 60) * 60000).toISOString(),
         landmark: landmark.trim() || undefined,
         latitude: latitude ? Number(latitude) : undefined,
         longitude: longitude ? Number(longitude) : undefined,
@@ -453,7 +457,7 @@ function BookingsView() {
 
   async function confirmBooking(id) {
     try {
-      await updateBookingStatus(id, 'confirmed');
+      await updateBookingStatus(id, 'CONFIRMED');
       toast.success('Booking confirmed.');
       setRefresh((value) => value + 1);
     } catch (requestError) {
@@ -485,9 +489,9 @@ function BookingsView() {
             return (
               <article className="booking-row" key={getId(booking)}>
                 <div className="booking-icon">SB</div>
-                <div className="booking-summary"><strong>{booking.service?.title || booking.serviceTitle || 'Service booking'}</strong><span>{provider} · {booking.mode?.replaceAll('_', ' ') || 'Meeting mode pending'}</span><span>{date ? new Date(date).toLocaleString() : 'Time to be confirmed'}</span></div>
+                <div className="booking-summary"><strong>{booking.service?.title || booking.serviceName || booking.serviceTitle || 'Service booking'}</strong><span>{provider} · {booking.mode?.replaceAll('_', ' ') || 'Meeting mode pending'}</span><span>{date ? new Date(date).toLocaleString() : 'Time to be confirmed'}</span></div>
                 <span className={`status-pill status-${status.replaceAll(' ', '-')}`}>{status}</span>
-                {['provider', 'individual_provider', 'company_staff'].includes(user.role) && booking.status === 'requested' && <button className="button button-outline" onClick={() => confirmBooking(getId(booking))}>Confirm</button>}
+                {['individual_provider', 'company_staff'].includes(user.role) && String(booking.status).toLowerCase() === 'requested' && <button className="button button-outline" onClick={() => confirmBooking(getId(booking))}>Confirm</button>}
                 <button className="text-button" onClick={() => setIssueBooking(booking)}>Report a problem</button>
               </article>
             );

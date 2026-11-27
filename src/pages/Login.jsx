@@ -2,13 +2,25 @@ import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
 import { useAuth } from '../context/authContext';
+import api from '../api/axiosInstance';
 
 export default function Login() {
   const [mobile, setMobile] = useState('');
   const [otp, setOtp] = useState('');
   const [step, setStep] = useState('phone');
+  const [demoUsers, setDemoUsers] = useState([]);
+  const [demoError, setDemoError] = useState('');
   const { user, sendOtp, verifyOtp, loading } = useAuth();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    api.get('/auth/demo-users')
+      .then((response) => {
+        const payload = response.data?.data;
+        if (payload?.demoMode && Array.isArray(payload.users)) setDemoUsers(payload.users);
+      })
+      .catch(() => setDemoError('Demo accounts are unavailable. You can still sign in normally.'));
+  }, []);
 
   useEffect(() => {
     if (user) navigate('/', { replace: true });
@@ -75,6 +87,21 @@ export default function Login() {
             {loading ? 'Please wait…' : step === 'phone' ? 'Send verification code' : 'Verify and sign in'}
           </button>
         </form>
+        {demoUsers.length > 0 && <section className="demo-login-options" aria-label="Demo accounts">
+          <strong>Try a demo role</strong>
+          <p>Choose an account, then verify with the displayed demo code.</p>
+          <div className="demo-login-list">
+            {demoUsers.map((demoUser) => (
+              <button key={demoUser.id} type="button" className="demo-login-option"
+                onClick={() => { setMobile(demoUser.mobile); setOtp('123456'); setStep('otp'); }}>
+                <span>{demoUser.fullname}<small>{demoUser.role.replaceAll('_', ' ')}</small></span>
+                <span>{demoUser.mobile}</span>
+              </button>
+            ))}
+          </div>
+          <small>Demo verification code: <strong>123456</strong></small>
+        </section>}
+        {demoError && <p className="field-note">{demoError}</p>}
         {step === 'otp' && <button className="text-button auth-resend" onClick={() => setStep('phone')}>Use a different phone number</button>}
         <div className="auth-privacy">Your phone number is kept private and is not shown to other users.</div>
       </div>
