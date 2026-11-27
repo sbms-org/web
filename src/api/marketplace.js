@@ -17,6 +17,14 @@ export async function getWorkFeed(params = {}) {
   return collection(await api.get('/work-posts/feed', { params }));
 }
 
+export async function getConsentRequests() {
+  return collection(await api.get('/work-posts/consent-requests'));
+}
+
+export async function respondToConsent(id, allowed, limitations = []) {
+  return api.post(`/work-posts/${encodeURIComponent(id)}/consent`, { allowed, limitations });
+}
+
 export async function getBookings() {
   return collection(await api.get('/bookings'));
 }

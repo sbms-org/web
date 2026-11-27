@@ -5,9 +5,11 @@ import { useAuth } from '../context/authContext';
 import {
   createIssue,
   createBooking,
+  getConsentRequests,
   getBookings,
   getWorkFeed,
   searchProviders,
+  respondToConsent,
   updateBookingStatus,
 } from '../api/marketplace';
 
@@ -435,6 +437,8 @@ function BookingsView() {
   const [refresh, setRefresh] = useState(0);
   const [result, setResult] = useState({ key: '', items: [], error: '' });
   const [issueBooking, setIssueBooking] = useState(null);
+  const [consentRequests, setConsentRequests] = useState([]);
+  const [consentError, setConsentError] = useState('');
   const key = `${getId(user) || 'guest'}:${refresh}`;
   const loading = Boolean(user) && result.key !== key;
   const items = result.key === key ? result.items : [];
@@ -443,14 +447,19 @@ function BookingsView() {
   useEffect(() => {
     if (!user) return undefined;
     let active = true;
-    getBookings().then((rows) => {
-      if (active) setResult({ key: `${getId(user) || 'guest'}:${refresh}`, items: rows, error: '' });
+    Promise.all([getBookings(), getConsentRequests()]).then(([rows, requests]) => {
+      if (active) {
+        setResult({ key: `${getId(user) || 'guest'}:${refresh}`, items: rows, error: '' });
+        setConsentRequests(requests);
+        setConsentError('');
+      }
     }).catch((requestError) => {
       if (active) setResult({
         key: `${getId(user) || 'guest'}:${refresh}`,
         items: [],
         error: requestError.response?.data?.message || requestError.message || 'Your bookings could not be loaded.',
       });
+      if (active) setConsentError(requestError.response?.data?.message || requestError.message || 'Consent requests could not be loaded.');
     });
     return () => { active = false; };
   }, [user, refresh]);
@@ -462,6 +471,16 @@ function BookingsView() {
       setRefresh((value) => value + 1);
     } catch (requestError) {
       toast.error(requestError.response?.data?.message || 'The booking could not be updated.');
+    }
+  }
+
+  async function respondToWorkConsent(post, allowed) {
+    try {
+      await respondToConsent(getId(post), allowed);
+      toast.success(allowed ? 'Consent recorded. The post will await moderation.' : 'Consent declined.');
+      setRefresh((value) => value + 1);
+    } catch (requestError) {
+      toast.error(requestError.response?.data?.message || 'Your consent response could not be saved.');
     }
   }
 
@@ -498,6 +517,29 @@ function BookingsView() {
           })}
         </div>
       )}
+      {!loading && !error && user.role === 'client' && consentRequests.length > 0 && (
+        <section className="consent-requests" aria-labelledby="consent-requests-heading">
+          <div className="section-heading">
+            <div><span className="eyebrow">YOUR PERMISSION</span><h2 id="consent-requests-heading">Work-post consent</h2></div>
+            <span className="result-count">{consentRequests.length} awaiting your decision</span>
+          </div>
+          {consentRequests.map((post) => (
+            <article className="consent-request" key={getId(post)}>
+              {post.media?.[0]?.url && <img src={post.media[0].url} alt="Work proposed for sharing" />}
+              <div className="consent-request__copy">
+                <strong>{post.providerName || 'Your service provider'}</strong>
+                <p>{post.caption || 'A completed service is proposed as a verified work post.'}</p>
+                <small>{post.area || 'Area not specified'} · Public work feed</small>
+              </div>
+              <div className="consent-request__actions">
+                <button className="button button-outline" onClick={() => respondToWorkConsent(post, false)}>Decline</button>
+                <button className="button button-dark" onClick={() => respondToWorkConsent(post, true)}>Allow sharing</button>
+              </div>
+            </article>
+          ))}
+        </section>
+      )}
+      {consentError && <p className="inline-error" role="alert">{consentError}</p>}
       {issueBooking && <IssueDialog booking={issueBooking} onClose={() => setIssueBooking(null)} onCreated={() => {
         setIssueBooking(null);
         toast.success('Issue sent to the ServiceBook support team.');

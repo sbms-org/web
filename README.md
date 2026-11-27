@@ -13,6 +13,7 @@ The default local API URL is `http://localhost:3000/api/v1`. The web client uses
 - `POST /auth/send-otp`, `POST /auth/verify-otp`
 - `GET /providers/nearby`
 - `GET /work-posts/feed`
+- `GET /work-posts/consent-requests`, `POST /work-posts/:id/consent`
 - `GET /bookings`, `POST /bookings`
 - `PATCH /bookings/:id/status`
 
