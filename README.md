@@ -28,3 +28,11 @@ Successful reads and writes are shared while the API process runs, but demo
 changes are in-memory only and reset on API restart. The client shows a notice
 whenever the API returns `X-SBMS-Data-Source: demo`; it does not replace valid
 empty results from a populated live database.
+
+The web seed copy is `public/data/sbms_dump.json`. Set
+`VITE_SBMS_TEST_MODE=true` to show the test sign-in control. It authenticates
+through the API using a seeded demo account and OTP `123456`; it does not
+bypass API authentication. The control is hidden unless explicitly enabled.
+Choose the shared API data source on the API with `SBMS_DEMO_MODE=always`,
+`off`, or `auto`; the frontend does not override the server's data-source
+decision.

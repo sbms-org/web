@@ -1,0 +1,845 @@
+{
+  "users": [
+    {
+      "id": "10000000-0000-4000-8000-000000000001",
+      "fullname": "Mekdes Client",
+      "mobile": "+251911000001",
+      "email": "mekdes.client@example.test",
+      "role": "client",
+      "status": "ACTIVE",
+      "city": "Addis Ababa",
+      "created_at": "2026-01-15T09:00:00.000Z"
+    },
+    {
+      "id": "10000000-0000-4000-8000-000000000002",
+      "fullname": "Dawit Electrician",
+      "mobile": "+251911000002",
+      "email": "dawit.provider@example.test",
+      "role": "individual_provider",
+      "status": "ACTIVE",
+      "city": "Addis Ababa",
+      "created_at": "2026-01-12T09:00:00.000Z"
+    },
+    {
+      "id": "10000000-0000-4000-8000-000000000003",
+      "fullname": "Selam Cleaning Co.",
+      "mobile": "+251911000003",
+      "email": "selam.company@example.test",
+      "role": "company_staff",
+      "status": "ACTIVE",
+      "city": "Addis Ababa",
+      "created_at": "2026-01-10T09:00:00.000Z"
+    },
+    {
+      "id": "10000000-0000-4000-8000-000000000004",
+      "fullname": "Biruk Service Broker",
+      "mobile": "+251911000004",
+      "email": "biruk.broker@example.test",
+      "role": "broker",
+      "status": "ACTIVE",
+      "city": "Addis Ababa",
+      "created_at": "2026-01-08T09:00:00.000Z"
+    },
+    {
+      "id": "10000000-0000-4000-8000-000000000005",
+      "fullname": "Hana Support",
+      "mobile": "+251911000005",
+      "email": "hana.support@example.test",
+      "role": "support_agent",
+      "status": "ACTIVE",
+      "city": "Addis Ababa",
+      "created_at": "2026-01-06T09:00:00.000Z"
+    },
+    {
+      "id": "10000000-0000-4000-8000-000000000006",
+      "fullname": "Abel Administrator",
+      "mobile": "+251911000006",
+      "email": "abel.admin@example.test",
+      "role": "admin",
+      "status": "ACTIVE",
+      "city": "Addis Ababa",
+      "created_at": "2026-01-01T09:00:00.000Z"
+    },
+    {
+      "id": "10000000-0000-4000-8000-000000000007",
+      "fullname": "Rahel Client",
+      "mobile": "+251911000007",
+      "email": "rahel.client@example.test",
+      "role": "client",
+      "status": "ACTIVE",
+      "city": "Addis Ababa",
+      "created_at": "2026-01-18T09:00:00.000Z"
+    },
+    {
+      "id": "10000000-0000-4000-8000-000000000008",
+      "fullname": "Yonas Carpenter",
+      "mobile": "+251911000008",
+      "email": "yonas.provider@example.test",
+      "role": "individual_provider",
+      "status": "ACTIVE",
+      "city": "Addis Ababa",
+      "created_at": "2026-01-20T09:00:00.000Z"
+    },
+    {
+      "id": "10000000-0000-4000-8000-000000000009",
+      "fullname": "Tigist Photographer",
+      "mobile": "+251911000009",
+      "email": "tigist.provider@example.test",
+      "role": "individual_provider",
+      "status": "ACTIVE",
+      "city": "Addis Ababa",
+      "created_at": "2026-02-01T09:00:00.000Z"
+    }
+  ],
+  "providers": [
+    {
+      "id": "20000000-0000-4000-8000-000000000001",
+      "userId": "10000000-0000-4000-8000-000000000002",
+      "category": "Home & Technical",
+      "bio": "Licensed electrician for residential repairs and safe installations.",
+      "latitude": 9.0192,
+      "longitude": 38.7525,
+      "serviceRadiusKm": 25,
+      "travelBufferMinutes": 30,
+      "meetingModes": [
+        "provider_comes",
+        "third_location"
+      ],
+      "verificationStatus": "VERIFIED",
+      "createdAt": "2026-01-12T10:00:00.000Z"
+    },
+    {
+      "id": "20000000-0000-4000-8000-000000000002",
+      "userId": "10000000-0000-4000-8000-000000000003",
+      "category": "Cleaning",
+      "bio": "Reliable home and office cleaning teams with flexible scheduling.",
+      "latitude": 9.0054,
+      "longitude": 38.7636,
+      "serviceRadiusKm": 20,
+      "travelBufferMinutes": 15,
+      "meetingModes": [
+        "provider_comes"
+      ],
+      "verificationStatus": "VERIFIED",
+      "createdAt": "2026-01-10T10:00:00.000Z"
+    },
+    {
+      "id": "20000000-0000-4000-8000-000000000003",
+      "userId": "10000000-0000-4000-8000-000000000008",
+      "category": "Home & Technical",
+      "bio": "Custom furniture, repairs, and careful carpentry work.",
+      "latitude": 9.0341,
+      "longitude": 38.7468,
+      "serviceRadiusKm": 30,
+      "travelBufferMinutes": 30,
+      "meetingModes": [
+        "provider_comes",
+        "client_goes",
+        "third_location"
+      ],
+      "verificationStatus": "VERIFIED",
+      "createdAt": "2026-01-20T10:00:00.000Z"
+    },
+    {
+      "id": "20000000-0000-4000-8000-000000000004",
+      "userId": "10000000-0000-4000-8000-000000000009",
+      "category": "Events & Photography",
+      "bio": "Event photography and small business product shoots.",
+      "latitude": 9.0123,
+      "longitude": 38.7412,
+      "serviceRadiusKm": 25,
+      "travelBufferMinutes": 20,
+      "meetingModes": [
+        "client_goes",
+        "third_location"
+      ],
+      "verificationStatus": "PENDING",
+      "createdAt": "2026-02-01T10:00:00.000Z"
+    }
+  ],
+  "services": [
+    {
+      "id": "30000000-0000-4000-8000-000000000001",
+      "providerId": "20000000-0000-4000-8000-000000000001",
+      "title": "Electrical repair visit",
+      "category": "Home & Technical",
+      "description": "Fault finding and common household electrical repairs.",
+      "priceMinor": 85000,
+      "durationMinutes": 90,
+      "meetingModes": [
+        "provider_comes"
+      ],
+      "isActive": true,
+      "createdAt": "2026-01-12T10:30:00.000Z"
+    },
+    {
+      "id": "30000000-0000-4000-8000-000000000002",
+      "providerId": "20000000-0000-4000-8000-000000000001",
+      "title": "Safety inspection",
+      "category": "Home & Technical",
+      "description": "A practical safety check for household electrical fixtures.",
+      "priceMinor": 120000,
+      "durationMinutes": 120,
+      "meetingModes": [
+        "provider_comes",
+        "third_location"
+      ],
+      "isActive": true,
+      "createdAt": "2026-01-12T10:35:00.000Z"
+    },
+    {
+      "id": "30000000-0000-4000-8000-000000000003",
+      "providerId": "20000000-0000-4000-8000-000000000002",
+      "title": "Home deep clean",
+      "category": "Cleaning",
+      "description": "A detailed clean for a small or medium home.",
+      "priceMinor": 180000,
+      "durationMinutes": 180,
+      "meetingModes": [
+        "provider_comes"
+      ],
+      "isActive": true,
+      "createdAt": "2026-01-10T10:30:00.000Z"
+    },
+    {
+      "id": "30000000-0000-4000-8000-000000000004",
+      "providerId": "20000000-0000-4000-8000-000000000003",
+      "title": "Furniture repair",
+      "category": "Home & Technical",
+      "description": "Repair and restoration for common wooden furniture.",
+      "priceMinor": 150000,
+      "durationMinutes": 120,
+      "meetingModes": [
+        "provider_comes",
+        "client_goes",
+        "third_location"
+      ],
+      "isActive": true,
+      "createdAt": "2026-01-20T10:30:00.000Z"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "40000000-0000-4000-8000-000000000001",
+      "clientId": "10000000-0000-4000-8000-000000000001",
+      "providerId": "20000000-0000-4000-8000-000000000001",
+      "serviceId": "30000000-0000-4000-8000-000000000001",
+      "startsAt": "2026-08-03T08:00:00.000Z",
+      "endsAt": "2026-08-03T09:30:00.000Z",
+      "mode": "provider_comes",
+      "latitude": 9.03,
+      "longitude": 38.77,
+      "landmark": "Near the community library",
+      "priceMinor": 85000,
+      "status": "CONFIRMED",
+      "createdAt": "2026-07-26T08:00:00.000Z"
+    },
+    {
+      "id": "40000000-0000-4000-8000-000000000002",
+      "clientId": "10000000-0000-4000-8000-000000000007",
+      "providerId": "20000000-0000-4000-8000-000000000003",
+      "serviceId": "30000000-0000-4000-8000-000000000004",
+      "startsAt": "2026-08-06T10:00:00.000Z",
+      "endsAt": "2026-08-06T12:00:00.000Z",
+      "mode": "client_goes",
+      "latitude": 9.0341,
+      "longitude": 38.7468,
+      "priceMinor": 150000,
+      "status": "REQUESTED",
+      "createdAt": "2026-07-27T08:00:00.000Z"
+    },
+    {
+      "id": "40000000-0000-4000-8000-000000000003",
+      "clientId": "10000000-0000-4000-8000-000000000001",
+      "providerId": "20000000-0000-4000-8000-000000000003",
+      "serviceId": "30000000-0000-4000-8000-000000000004",
+      "startsAt": "2026-07-10T07:00:00.000Z",
+      "endsAt": "2026-07-10T09:00:00.000Z",
+      "mode": "provider_comes",
+      "latitude": 9.02,
+      "longitude": 38.75,
+      "priceMinor": 150000,
+      "completedAt": "2026-07-10T09:00:00.000Z",
+      "status": "COMPLETED",
+      "createdAt": "2026-07-01T08:00:00.000Z"
+    },
+    {
+      "id": "40000000-0000-4000-8000-000000000004",
+      "clientId": "10000000-0000-4000-8000-000000000007",
+      "providerId": "20000000-0000-4000-8000-000000000002",
+      "serviceId": "30000000-0000-4000-8000-000000000003",
+      "startsAt": "2026-12-03T08:00:00.000Z",
+      "endsAt": "2026-12-03T11:00:00.000Z",
+      "mode": "provider_comes",
+      "latitude": 9.02,
+      "longitude": 38.76,
+      "landmark": "Near the office entrance",
+      "priceMinor": 180000,
+      "status": "REQUESTED",
+      "createdAt": "2026-11-27T08:00:00.000Z"
+    }
+  ],
+  "workPosts": [
+    {
+      "id": "50000000-0000-4000-8000-000000000001",
+      "providerId": "20000000-0000-4000-8000-000000000001",
+      "type": "sample",
+      "caption": "A tidy lighting upgrade completed with safety checks.",
+      "area": "Bole",
+      "media": [
+        {
+          "url": "https://placehold.co/1200x800/png?text=Electrical+repair",
+          "type": "photo"
+        }
+      ],
+      "mediaVersion": 1,
+      "status": "PUBLISHED",
+      "publishedAt": "2026-07-20T09:00:00.000Z",
+      "createdAt": "2026-07-20T09:00:00.000Z"
+    },
+    {
+      "id": "50000000-0000-4000-8000-000000000002",
+      "providerId": "20000000-0000-4000-8000-000000000003",
+      "bookingId": "40000000-0000-4000-8000-000000000003",
+      "type": "verified_job",
+      "caption": "Repaired and refinished a wooden dining chair.",
+      "area": "Kazanchis",
+      "media": [
+        {
+          "url": "https://placehold.co/1200x800/png?text=Carpentry+work",
+          "type": "photo"
+        }
+      ],
+      "mediaVersion": 1,
+      "status": "PENDING_MODERATION",
+      "createdAt": "2026-07-18T09:00:00.000Z"
+    },
+    {
+      "id": "50000000-0000-4000-8000-000000000003",
+      "providerId": "20000000-0000-4000-8000-000000000001",
+      "bookingId": "40000000-0000-4000-8000-000000000001",
+      "type": "verified_job",
+      "caption": "Would you like to approve sharing this completed repair?",
+      "area": "Bole",
+      "media": [
+        {
+          "url": "https://placehold.co/1200x800/png?text=Repair+consent+preview",
+          "type": "photo"
+        }
+      ],
+      "mediaVersion": 1,
+      "status": "PENDING_CONSENT",
+      "createdAt": "2026-07-28T09:00:00.000Z"
+    }
+  ],
+  "consents": [
+    {
+      "id": "80000000-0000-4000-8000-000000000001",
+      "postId": "50000000-0000-4000-8000-000000000002",
+      "clientId": "10000000-0000-4000-8000-000000000001",
+      "mediaVersion": 1,
+      "allowed": true,
+      "limitations": [
+        "Do not show faces"
+      ],
+      "createdAt": "2026-07-18T10:00:00.000Z"
+    }
+  ],
+  "issues": [
+    {
+      "id": "60000000-0000-4000-8000-000000000001",
+      "reporterId": "10000000-0000-4000-8000-000000000001",
+      "type": "PLATFORM",
+      "subject": "Question about a booking update",
+      "description": "I would like help understanding the status shown for my recent booking.",
+      "status": "OPEN",
+      "createdAt": "2026-07-25T10:00:00.000Z"
+    },
+    {
+      "id": "60000000-0000-4000-8000-000000000002",
+      "reporterId": "10000000-0000-4000-8000-000000000007",
+      "type": "SAFETY",
+      "subject": "Please review a service interaction",
+      "description": "I have a concern about communication before a scheduled appointment.",
+      "status": "IN_PROGRESS",
+      "createdAt": "2026-07-24T10:00:00.000Z"
+    }
+  ],
+  "auditEvents": [
+    {
+      "id": "70000000-0000-4000-8000-000000000001",
+      "userId": "10000000-0000-4000-8000-000000000006",
+      "action": "provider.verified",
+      "entity": "provider_profile",
+      "entityId": "20000000-0000-4000-8000-000000000001",
+      "details": "Seeded demo activity",
+      "createdAt": "2026-07-20T12:00:00.000Z"
+    },
+    {
+      "id": "70000000-0000-4000-8000-000000000002",
+      "userId": "10000000-0000-4000-8000-000000000001",
+      "action": "booking.requested",
+      "entity": "booking",
+      "entityId": "40000000-0000-4000-8000-000000000001",
+      "details": "Seeded demo activity",
+      "createdAt": "2026-07-26T08:00:00.000Z"
+    }
+  ],
+  "settings": [
+    {
+      "key": "platform_name",
+      "value": "ServiceBook",
+      "category": "general",
+      "description": "Public platform name",
+      "updatedAt": "2026-07-01T10:00:00.000Z"
+    },
+    {
+      "key": "default_service_radius_km",
+      "value": 25,
+      "category": "discovery",
+      "description": "Default provider discovery radius",
+      "updatedAt": "2026-07-01T10:00:00.000Z"
+    },
+    {
+      "key": "booking_cancellation_hours",
+      "value": 24,
+      "category": "booking",
+      "description": "Suggested cancellation notice period",
+      "updatedAt": "2026-07-01T10:00:00.000Z"
+    },
+    {
+      "key": "testMode",
+      "value": true,
+      "category": "testing",
+      "description": "Enable test-only skip and demo controls",
+      "updatedAt": "2026-11-28T00:00:00.000Z"
+    },
+    {
+      "key": "dataSource",
+      "value": "dump",
+      "category": "testing",
+      "description": "Choose dump or database-backed data",
+      "updatedAt": "2026-11-28T00:00:00.000Z"
+    },
+    {
+      "key": "cancellationFeePercent",
+      "value": 10,
+      "category": "booking",
+      "description": "Default cancellation fee",
+      "updatedAt": "2026-11-28T00:00:00.000Z"
+    },
+    {
+      "key": "platformFeePercent",
+      "value": 5,
+      "category": "payment",
+      "description": "Default platform fee",
+      "updatedAt": "2026-11-28T00:00:00.000Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat-1",
+      "name": "Home & Technical",
+      "children": [
+        "Electrical",
+        "Plumbing",
+        "Carpentry",
+        "Laptop repair"
+      ]
+    },
+    {
+      "id": "cat-2",
+      "name": "Personal & Beauty",
+      "children": [
+        "Men's Haircut",
+        "Makeup",
+        "Nails"
+      ]
+    },
+    {
+      "id": "cat-3",
+      "name": "Education",
+      "children": [
+        "Tutoring",
+        "Music",
+        "Language"
+      ]
+    },
+    {
+      "id": "cat-4",
+      "name": "Events & Photography",
+      "children": [
+        "Photography",
+        "Catering",
+        "Event setup"
+      ]
+    },
+    {
+      "id": "cat-5",
+      "name": "Cleaning",
+      "children": [
+        "Home cleaning",
+        "Office cleaning"
+      ]
+    },
+    {
+      "id": "cat-6",
+      "name": "Health & Fitness",
+      "children": [
+        "Personal training",
+        "Massage"
+      ]
+    }
+  ],
+  "savedPlaces": [
+    {
+      "id": "place-1",
+      "userId": "10000000-0000-4000-8000-000000000001",
+      "name": "Home",
+      "latitude": 9.03,
+      "longitude": 38.77,
+      "landmark": "Bole"
+    }
+  ],
+  "favorites": [
+    {
+      "id": "fav-1",
+      "clientId": "10000000-0000-4000-8000-000000000001",
+      "providerId": "20000000-0000-4000-8000-000000000001"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "review-1",
+      "bookingId": "40000000-0000-4000-8000-000000000003",
+      "reviewerId": "10000000-0000-4000-8000-000000000001",
+      "revieweeId": "10000000-0000-4000-8000-000000000008",
+      "rating": 5,
+      "comment": "Professional and timely service."
+    }
+  ],
+  "payments": [
+    {
+      "id": "pay-1",
+      "bookingId": "40000000-0000-4000-8000-000000000003",
+      "method": "cash",
+      "amountMinor": 150000,
+      "status": "PAID",
+      "receiptUrl": "/receipts/pay-1.pdf",
+      "createdAt": "2026-07-10T09:10:00.000Z"
+    }
+  ],
+  "conversations": [
+    {
+      "id": "chat-1",
+      "bookingId": "40000000-0000-4000-8000-000000000001",
+      "participants": [
+        "10000000-0000-4000-8000-000000000001",
+        "10000000-0000-4000-8000-000000000002"
+      ],
+      "messages": [
+        {
+          "senderId": "10000000-0000-4000-8000-000000000001",
+          "text": "Please confirm your arrival time.",
+          "createdAt": "2026-07-26T08:10:00.000Z"
+        }
+      ]
+    }
+  ],
+  "trustedContacts": [
+    {
+      "id": "tc-1",
+      "userId": "10000000-0000-4000-8000-000000000001",
+      "name": "Sara Kebede",
+      "mobile": "+251911000099",
+      "shareTripDetails": true
+    }
+  ],
+  "gigs": [
+    {
+      "id": "gig-1",
+      "companyUserId": "10000000-0000-4000-8000-000000000003",
+      "title": "Office cleaner needed",
+      "category": "Cleaning",
+      "description": "Two-day office cleaning assignment",
+      "status": "OPEN",
+      "applications": 2
+    }
+  ],
+  "brokerRoster": [
+    {
+      "id": "broker-roster-1",
+      "brokerUserId": "10000000-0000-4000-8000-000000000004",
+      "providerId": "20000000-0000-4000-8000-000000000001",
+      "commissionPercent": 10
+    }
+  ],
+  "reports": [
+    {
+      "id": "report-1",
+      "scope": "platform",
+      "metric": "completedBookings",
+      "value": 1,
+      "period": "2026-07"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notif-1",
+      "userId": "10000000-0000-4000-8000-000000000001",
+      "channel": "push",
+      "title": "Booking confirmed",
+      "body": "Dawit confirmed your electrical repair booking.",
+      "status": "DELIVERED"
+    }
+  ],
+  "safetyEvents": [
+    {
+      "id": "sos-1",
+      "userId": "10000000-0000-4000-8000-000000000001",
+      "type": "SOS_TEST",
+      "latitude": 9.03,
+      "longitude": 38.77,
+      "status": "CLOSED",
+      "createdAt": "2026-07-10T09:00:00.000Z"
+    }
+  ],
+  "availabilityRules": [
+    {
+      "id": "availability-1",
+      "providerId": "20000000-0000-4000-8000-000000000001",
+      "weekday": 1,
+      "startTime": "09:00",
+      "endTime": "17:00",
+      "breaks": [{ "startTime": "12:00", "endTime": "13:00" }],
+      "timezone": "Africa/Addis_Ababa"
+    }
+  ],
+  "providerDocuments": [
+    {
+      "id": "document-1",
+      "providerId": "20000000-0000-4000-8000-000000000001",
+      "type": "identity",
+      "url": "https://example.test/documents/provider-1-id.pdf",
+      "status": "VERIFIED",
+      "reviewedBy": "10000000-0000-4000-8000-000000000006"
+    }
+  ],
+  "companyInvites": [
+    {
+      "id": "invite-1",
+      "companyUserId": "10000000-0000-4000-8000-000000000003",
+      "mobile": "+251911000010",
+      "role": "company_staff",
+      "status": "PENDING",
+      "expiresAt": "2026-12-01T00:00:00.000Z"
+    }
+  ],
+  "staffAssignments": [
+    {
+      "id": "assignment-1",
+      "companyProviderId": "20000000-0000-4000-8000-000000000002",
+      "staffUserId": "10000000-0000-4000-8000-000000000003",
+      "bookingId": "40000000-0000-4000-8000-000000000004",
+      "status": "ASSIGNED"
+    }
+  ],
+  "travelFeeRules": [
+    {
+      "id": "travel-fee-1",
+      "providerId": "20000000-0000-4000-8000-000000000001",
+      "includedRadiusKm": 5,
+      "priceMinorPerKm": 2500,
+      "maximumFeeMinor": 50000
+    }
+  ],
+  "servicePackages": [
+    {
+      "id": "package-1",
+      "serviceId": "30000000-0000-4000-8000-000000000001",
+      "title": "Home safety bundle",
+      "priceMinor": 160000,
+      "items": ["Electrical repair visit", "Safety inspection"],
+      "isActive": true
+    }
+  ],
+  "serviceAddons": [
+    {
+      "id": "addon-1",
+      "serviceId": "30000000-0000-4000-8000-000000000001",
+      "title": "Additional fixture",
+      "priceMinor": 15000,
+      "isActive": true
+    }
+  ],
+  "serviceRequests": [
+    {
+      "id": "request-1",
+      "clientId": "10000000-0000-4000-8000-000000000007",
+      "category": "Carpentry",
+      "description": "Repair a wooden dining chair",
+      "area": "Kazanchis",
+      "status": "OPEN",
+      "createdAt": "2026-07-27T08:00:00.000Z"
+    }
+  ],
+  "serviceOffers": [
+    {
+      "id": "offer-1",
+      "requestId": "request-1",
+      "providerId": "20000000-0000-4000-8000-000000000003",
+      "priceMinor": 150000,
+      "message": "I can repair and refinish the chair.",
+      "status": "PENDING"
+    }
+  ],
+  "quotes": [
+    {
+      "id": "quote-1",
+      "brokerUserId": "10000000-0000-4000-8000-000000000004",
+      "requestId": "request-1",
+      "providerId": "20000000-0000-4000-8000-000000000003",
+      "basePriceMinor": 150000,
+      "brokerFeeMinor": 15000,
+      "showBreakdownToClient": true,
+      "status": "SENT"
+    }
+  ],
+  "notificationPreferences": [
+    {
+      "id": "notification-preferences-1",
+      "userId": "10000000-0000-4000-8000-000000000001",
+      "channels": { "push": true, "sms": true, "email": false, "telegram": false },
+      "quietHours": { "enabled": true, "start": "22:00", "end": "07:00" }
+    }
+  ],
+  "knowledgeBaseArticles": [
+    {
+      "id": "kb-1",
+      "title": "How to report a booking problem",
+      "category": "Bookings",
+      "content": "Open the booking, select Report an issue, and include the relevant details.",
+      "locale": "en",
+      "isPublished": true
+    }
+  ],
+  "surveys": [
+    {
+      "id": "survey-1",
+      "trigger": "booking_completed",
+      "title": "How was your service?",
+      "questions": [{ "id": "rating", "type": "rating", "required": true }],
+      "isActive": true
+    }
+  ],
+  "earningsLedger": [
+    {
+      "id": "ledger-1",
+      "userId": "10000000-0000-4000-8000-000000000008",
+      "bookingId": "40000000-0000-4000-8000-000000000003",
+      "entryType": "SERVICE_EARNING",
+      "amountMinor": 142500,
+      "currency": "ETB",
+      "status": "AVAILABLE"
+    }
+  ],
+  "brokerCommissions": [
+    {
+      "id": "commission-1",
+      "brokerUserId": "10000000-0000-4000-8000-000000000004",
+      "bookingId": "40000000-0000-4000-8000-000000000003",
+      "amountMinor": 7500,
+      "status": "PENDING"
+    }
+  ],
+  "payoutRequests": [
+    {
+      "id": "payout-1",
+      "userId": "10000000-0000-4000-8000-000000000008",
+      "amountMinor": 100000,
+      "method": "bank_transfer",
+      "status": "PENDING",
+      "createdAt": "2026-07-11T09:00:00.000Z"
+    }
+  ],
+  "invoices": [
+    {
+      "id": "invoice-1",
+      "bookingId": "40000000-0000-4000-8000-000000000003",
+      "paymentId": "pay-1",
+      "currency": "ETB",
+      "subtotalMinor": 150000,
+      "platformFeeMinor": 7500,
+      "totalMinor": 150000,
+      "status": "PAID",
+      "pdfUrl": "/invoices/invoice-1.pdf"
+    }
+  ],
+  "refunds": [
+    {
+      "id": "refund-1",
+      "paymentId": "pay-1",
+      "issueId": "60000000-0000-4000-8000-000000000001",
+      "amountMinor": 0,
+      "reason": "No refund requested",
+      "status": "NOT_APPLICABLE"
+    }
+  ],
+  "blockedUsers": [
+    {
+      "id": "block-1",
+      "blockerId": "10000000-0000-4000-8000-000000000001",
+      "blockedId": "10000000-0000-4000-8000-000000000009",
+      "reason": "Unwanted contact",
+      "createdAt": "2026-07-12T10:00:00.000Z"
+    }
+  ],
+  "riskFlags": [
+    {
+      "id": "risk-1",
+      "userId": "10000000-0000-4000-8000-000000000009",
+      "type": "REPEATED_CANCELLATIONS",
+      "severity": "LOW",
+      "status": "UNDER_REVIEW",
+      "createdAt": "2026-07-15T10:00:00.000Z"
+    }
+  ],
+  "gigApplications": [
+    {
+      "id": "application-1",
+      "gigId": "gig-1",
+      "applicantUserId": "10000000-0000-4000-8000-000000000002",
+      "message": "I have experience cleaning offices.",
+      "status": "SHORTLISTED",
+      "interviewAt": "2026-12-02T09:00:00.000Z"
+    }
+  ],
+  "postAnalytics": [
+    {
+      "id": "analytics-1",
+      "postId": "50000000-0000-4000-8000-000000000001",
+      "views": 42,
+      "likes": 8,
+      "saves": 3,
+      "comments": 2,
+      "shares": 1,
+      "messages": 1,
+      "bookings": 1
+    }
+  ],
+  "scheduledReports": [
+    {
+      "id": "scheduled-report-1",
+      "userId": "10000000-0000-4000-8000-000000000006",
+      "reportType": "platform_summary",
+      "format": "csv",
+      "delivery": "email",
+      "schedule": "weekly",
+      "enabled": true
+    }
+  ],
+  "localizationStrings": [
+    { "key": "booking.confirmed", "locale": "en", "value": "Booking confirmed" },
+    { "key": "booking.confirmed", "locale": "am", "value": "ቦታ ማስያዣው ተረጋግጧል" }
+  ]
+}

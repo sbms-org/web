@@ -5,6 +5,7 @@ import { useAuth } from '../context/authContext';
 import api from '../api/axiosInstance';
 
 export default function Login() {
+  const testToolsEnabled = import.meta.env.VITE_SBMS_TEST_MODE === 'true';
   const [mobile, setMobile] = useState('');
   const [otp, setOtp] = useState('');
   const [step, setStep] = useState('phone');
@@ -13,13 +14,53 @@ export default function Login() {
   const { user, sendOtp, verifyOtp, loading } = useAuth();
   const navigate = useNavigate();
 
+  async function skipLoginForTesting() {
+    let account = demoUsers.find((candidate) => candidate.role === 'client');
+    if (!account) {
+      try {
+        const dump = await fetch('/data/sbms_dump.json').then((response) => {
+          if (!response.ok) throw new Error('The local JSON dump is unavailable.');
+          return response.json();
+        });
+        account = dump.users?.find((candidate) => candidate.role === 'client');
+      } catch (error) {
+        toast.error(error.message || 'No test account is available.');
+        return;
+      }
+    }
+    if (!account?.mobile) {
+      toast.error('No test account is available.');
+      return;
+    }
+    const sent = await sendOtp(account.mobile);
+    if (!sent.success) {
+      toast.error(sent.message);
+      return;
+    }
+    const verified = await verifyOtp(account.mobile, '123456');
+    if (!verified.success) {
+      toast.error(verified.message);
+      return;
+    }
+    toast.success('Signed in with the test account.');
+    navigate('/', { replace: true });
+  }
+
   useEffect(() => {
     api.get('/auth/demo-users')
       .then((response) => {
         const payload = response.data?.data;
         if (payload?.demoMode && Array.isArray(payload.users)) setDemoUsers(payload.users);
       })
-      .catch(() => setDemoError('Demo accounts are unavailable. You can still sign in normally.'));
+      .catch(async () => {
+        try {
+          const dump = await fetch('/data/sbms_dump.json').then((response) => response.json());
+          if (Array.isArray(dump.users)) setDemoUsers(dump.users);
+          else setDemoError('Demo accounts are unavailable. You can still sign in normally.');
+        } catch {
+          setDemoError('Demo accounts are unavailable. You can still sign in normally.');
+        }
+      });
   }, []);
 
   useEffect(() => {
@@ -102,6 +143,7 @@ export default function Login() {
           <small>Demo verification code: <strong>123456</strong></small>
         </section>}
         {demoError && <p className="field-note">{demoError}</p>}
+        {testToolsEnabled && <button type="button" className="text-button auth-resend" onClick={skipLoginForTesting}>Skip login for testing</button>}
         {step === 'otp' && <button className="text-button auth-resend" onClick={() => setStep('phone')}>Use a different phone number</button>}
         <div className="auth-privacy">Your phone number is kept private and is not shown to other users.</div>
       </div>
