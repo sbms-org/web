@@ -5,7 +5,8 @@ import { useAuth } from '../context/authContext';
 import api from '../api/axiosInstance';
 
 export default function Login() {
-  const testToolsEnabled = import.meta.env.VITE_SBMS_TEST_MODE === 'true';
+  // Temporary development setting. Set VITE_SBMS_TEST_MODE=false before release.
+  const testToolsEnabled = import.meta.env.VITE_SBMS_TEST_MODE !== 'false';
   const [mobile, setMobile] = useState('');
   const [otp, setOtp] = useState('');
   const [step, setStep] = useState('phone');
